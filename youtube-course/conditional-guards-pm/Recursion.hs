@@ -25,3 +25,4 @@ qsort (x:xs) =
     where
         menores = [e | e <- xs, e < x]
         maiores = [e | e <- xs, e >= x]
+

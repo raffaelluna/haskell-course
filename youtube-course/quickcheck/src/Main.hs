@@ -1,6 +1,6 @@
 module Main where
 
-import Test.QuickCheck
+import           Test.QuickCheck
 
 qsort :: Ord a => [a] -> [a]
 qsort [] = []
@@ -22,7 +22,6 @@ prop_minimum xs = head (qsort xs) == minimum xs
 -- $> prop_length [1, 3, 6, 8, 9]
 -- $> quickCheck prop_idempotencia
 -- $> quickCheck (prop_length :: [Int] -> Bool)
-
 main :: IO ()
 main = do
   putStrLn "hello world"
